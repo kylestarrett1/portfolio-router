@@ -3,31 +3,25 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => (
   <header>
-    <h1>Expensify</h1>
+    <h1>Portfolio</h1>
     <NavLink
       to='/'
       className={({ isActive }) => (isActive ? "is-active" : undefined)}
       end
     >
-      Dashboard
+      Home
     </NavLink>
     <NavLink
-      to='/create'
+      to='/portfolio'
       className={({ isActive }) => (isActive ? "is-active" : undefined)}
     >
-      Create Expense
+      Portfolio
     </NavLink>
     <NavLink
-      to='/edit'
+      to='/contact'
       className={({ isActive }) => (isActive ? "is-active" : undefined)}
     >
-      Edit Expense
-    </NavLink>
-    <NavLink
-      to='/help'
-      className={({ isActive }) => (isActive ? "is-active" : undefined)}
-    >
-      Help
+      Contact
     </NavLink>
   </header>
 );
